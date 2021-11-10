@@ -4,8 +4,6 @@ $basesDatos = "usuarios";
 $usuario = "root";
 $pass = "root";
 
-$coca = "mucha coca";
-
 function insertaElemento($nombre,$contraseña,$cuentaBancaria){
     try {
         $conexion = new PDO("mysql:host=$GLOBALS[servidor];dbname=$GLOBALS[basesDatos]",$GLOBALS['usuario'],$GLOBALS['pass']);
