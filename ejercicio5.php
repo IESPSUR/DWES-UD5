@@ -14,7 +14,7 @@
         $nombre = $_POST["nombre"];            
         $contraseña = $_POST["contraseña"];            
         $cuentaBancaria = $_POST["cuentaBancaria"];       
-        $contraseña = password_hash("contraseña",PASSWORD_DEFAULT);
+        $contraseña = password_hash($contraseña,PASSWORD_DEFAULT);
         insertaElemento($nombre,$contraseña,$cuentaBancaria);
     }
     ?>
